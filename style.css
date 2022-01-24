@@ -185,3 +185,41 @@ a{
     background: #6278df;
     border: 2px solid #6278df;
 }
+/*** Banner Down ***/
+.banner-down{
+    background: #f7f9ff;
+    padding: 95px 0;
+}
+.video{
+    width: 45%;
+    margin-right: 5%;
+}
+.text-2{
+    width: 48%;
+    
+}
+.text-2 h1 {
+	font-size: 2.8rem;
+	line-height: 1.4;
+	font-weight: 400;
+	margin-top: -16px;
+}
+.text-2 p {
+	font-size: 1.3rem;
+	color: #767676;
+	line-height: 1.5;
+	font-weight: 300;
+	padding-top: 2rem;
+}
+/*** Service Section ***/
+.service{}
+.service h1{}
+.service p{}
+.service-item{
+    text-align: center;
+}
+.service-box{
+    width: 31%;
+    margin-right: 2%;
+    margin-bottom: 15px;
+}
