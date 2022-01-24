@@ -1,0 +1,187 @@
+/*** Nessesary CSS ***/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.text-start{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-end{
+    text-align: right;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/*** Header Section ***/
+.header{
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.header-logo{
+    width: 30%;
+}
+.header-menu{
+    width: 56%;
+}
+.header-button{
+    width: 14%;
+}
+.header-logo img {
+	width: 47px;
+	float: left;
+	margin-right: 10px;
+}
+.header-logo span {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: black;
+	display: inline-block;
+	margin-top: 8px;
+	letter-spacing: 1px;
+    transition: 0.2s;
+}
+.header-logo span:hover{
+    color: #ccc;
+}
+.header-menu ul{}
+.header-menu ul li{
+    display:inline-block;
+    position: relative;
+    z-index: 11;
+}
+.header-menu ul li a {
+	display: inline-block;
+	color: #000;
+	display: inline-block;
+	margin: 0.667em 1rem;
+	font-size: 1rem;
+	line-height: 1.4;
+	letter-spacing: 1px;
+	font-weight: 400;
+    transition: 0.2s;
+    
+}
+.header-menu ul li:hover > a{
+    color: #6278df;
+}
+.header-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+
+}
+.header-menu ul li ul li{
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.header-button{
+    text-align: right;
+}
+.header-btn{
+    display: inline-block;
+    color: #6278df!important;
+    border: 2px solid #6278df;
+    padding: 8px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 6px;
+    transition: 0.3s;
+    background: #fff;
+}
+.header-btn:hover{
+    color: #fff !important;
+    background: #6278df !important;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+/*** Banner Section ***/
+.banner{
+    background: url(https://i.ibb.co/TLSvcGz/mbr-4.jpg) no-repeat center;
+    padding: 126px 0;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.432);
+    z-index: -1;    
+}
+.banner-text h1 {
+	color: #fff;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	padding-bottom: 0.5rem;
+	font-weight: 400;
+}
+.banner-text h2 {
+	font-size: 3.8rem;
+	color: #fff;
+	line-height: 1.1;
+	padding-bottom: 0.5rem;
+	padding-top: 2rem;
+	font-weight: 700;
+}
+.banner-text .defult-btn {
+	color: #7d7d7d;
+	background: #fcfcfc;
+	padding: 15px 30px;
+	display: inline-block;
+	font-size: 1.3rem;
+	line-height: 1.5;
+	border-radius: 6px;
+	font-weight: 600;
+    margin: 25px 10px;
+	word-spacing: 1.5px;
+	border: 2px solid #fcfcfc;
+    transition: 0.3s;
+}
+.banner-text .defult-btn:hover{
+    color: #fff;
+    background: #6278df;
+    border: 2px solid #6278df;
+}
